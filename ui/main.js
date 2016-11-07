@@ -25,7 +25,7 @@ button.onclick = function() {
 };
 
 // Submit name
-
+ 
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
      // Create a request object
@@ -49,7 +49,7 @@ submit.onclick = function(){
     };
     // Make the request
                 
-                request.open('GET', 'http://risha1588.imad.hasura-app.io/submit-name' + name, true);
+                request.open('GET', 'http://risha1588.imad.hasura-app.io/submit-name?name=' + name, true);
                 request.send(null);
                 
     // Submit name

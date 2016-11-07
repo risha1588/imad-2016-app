@@ -48,10 +48,18 @@ submit.onclick = function(){
         // Not done yet 
     };
     // Make the request
-                var nameInput = document.getElementById('name');
-                var name = nameInput.value;
+                
                 request.open('GET', 'http://risha1588.imad.hasura-app.io/submit-name' + name, true);
                 request.send(null);
+                
+    // Submit name
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit-btn');
+    submit.onclick = function(){
+        // Make a request to the server and send the name
+        // Capture a list of names and render it as a list
+    };
     
     
 
